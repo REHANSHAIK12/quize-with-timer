@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',scans-serif;
+    box-sizing: border-box;
+}
+#p1{
+    font-size: 20px;
+}

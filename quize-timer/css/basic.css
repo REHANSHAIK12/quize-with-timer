@@ -1,0 +1,46 @@
+arrow {
+    cursor: pointer;
+    display: inline-block;  
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    line-height: 2.5em;
+    padding-left: 1em;
+    padding-right: 2em;
+    background: white;
+    color: black;
+     &:after {
+                border-left: 20px solid white;
+    }
+  }
+  
+  .arrow:after {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -20px;
+    right: 0; 
+  }
+  .arrow:hover,arrow:active{
+    background: yellow;
+    color:black;
+    &:after{
+        border-left: 20px solid yellow;
+    }
+  }
+  body, html {
+    font-family: helvetica;
+    background: #333;
+    color: #CCC;
+  }
+  .content {
+    width: 20em;
+    margin: 0 auto;
+  }
+  a:visited, a:link {
+    color: #F93;
+  }

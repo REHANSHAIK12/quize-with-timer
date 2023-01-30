@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css?family=Trirong");
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Trirong", serif ;
+}
+body{
+    background-color:#9a9f9d ;
+}
+.box{
+    position:absolute;
+    top:10%;
+    width:55%;
+    left:25%;
+    opacity:1;
+    pointer-events:auto;
+}
+.box.unactiveInfo{
+    opacity:0;
+    pointer-events: none;
+}
+.quiz-box{
+    position:absolute;
+    top:10%;
+    width:50%;
+    left:25%;
+    opacity:0;
+    pointer-events:none;
+}
+.quiz-box.activeQuiz{
+    opacity:1;
+    pointer-events:auto;
+    z-index: 10;
+}
+.info-box,.ques-ans{
+    margin:8%;
+    padding:5px;
+    text-align:justify;
+    height:auto;
+    background-color: white;
+    color:#1b945b;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 5px #1b945b;
+} 
+.info-title,.info-footer{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid grey;
+}
+.info-list{
+    font-size: 20px;
+   
+}
+.info{
+    border-bottom:1px solid gray;
+    padding:5px;
+}
+.info span{
+    font-weight: bold;
+    color: #2bd485;
+}
+ul{
+    list-style-type: none;
+}
+.box .button{
+    text-align: center;
+}
+.button Button,.result-button Button{
+    width:100px;
+    height:50px;
+    border-radius: 5px;
+    border: none;
+    font-size:20px;
+    font-weight: bold;
+    position:relative;
+    margin :20px 30px 20px 30px;
+    color:#2bd485;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px #1b945b;
+    transition: all 0.3 ease-in;
+}
+.button Button:hover,.result-button Button:hover{
+    background-color: aliceblue;
+    color:#3cef9b;
+}
+.topic{
+    font-size:40px;
+    text-align: center;
+    font-weight:bold;
+    position:relative;
+    margin-top:20px;
+    
+}
+.ques-box{
+    display:flex;
+    justify-content: space-between;
+    height:auto;
+    color:#1b945b;
+    font-weight: bold;
+    text-align: center;
+    /* box-shadow: 0px 1px 5px 1px; */
+    border-bottom:2px solid #1b945b;
+    
+}
+.question{
+    padding:5px;
+    font-size: 25px;
+}
+.timer{
+    display:flex;
+    font-size: 20px;
+    padding:5px;
+}
+.timer-line{
+    margin:0px;
+    height:5px;
+    background-color:red;
+}
+.answer{
+    box-shadow:1px 1px 2px 2px #2bd485;
+    border-radius: 5px;
+    margin-bottom:20px;
+    padding:5px;
+    font-size: 20px;
+    color:black
+}
+.answer.correctAns{
+    display:flex;
+    justify-content: space-between;
+    color:#156942;
+    font-weight: bold;
+    background-color: #8cd7b3;
+}
+.answer.wrongAns{
+    display:flex;
+    justify-content: space-between;
+    color:rgba(119, 9, 9, 0.873);
+    font-weight: bold;
+    background-color: #b55963;
+    box-shadow:1px 1px 2px 2px #b53b47;
+}
+.ans-box .answer.disabled{
+    pointer-events: none;
+}
+.ans-box{
+    padding:10px;
+    margin:10px;
+}
+.ans-box .answer:hover{
+    background-color: #dff8ec;
+    cursor:pointer;
+}
+.left{
+    text-align: left;
+}
+.quiz-footer{
+    display:flex;
+    justify-content: space-between;
+
+}
+.count{
+    display:flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin:10px;
+}
+.next-button Button{
+    display: none;
+    border-radius: 10px;
+    border:none;
+    font-size:25px;
+    font-weight: bold;
+    color: white;
+    background-color: #156942;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow:1px 1px 2px 2px #1b945b;
+    transition: all 0.3 ease-in;
+}
+.next-button Button:hover{
+    font-size:22px;
+    background-color: #1b945b;
+}
+.score-box{
+    background-color: white;
+    margin :auto;
+    color:#156942;
+    width:40%;
+    height:auto;
+    margin-top: 8%;
+    border-radius:5px;
+    box-shadow:10px 10px 5px 5px #1b945b;
+}
+.result-box{
+    border:none;
+    opacity: 0;
+    pointer-events: none;
+}
+.result-box.activeResult{
+    opacity: 1;
+    pointer-events: auto;
+}
+.score-box .icon{
+    background-color: #dff8ec;
+    text-align: center;
+    color:#1b945b;
+    font-size: 30px;
+    border:4px solid #1b945b;
+    width:60px;
+    margin:auto;
+    border-radius: 50px;
+    position: relative;
+    top:20px;
+}
+.score-box p{
+    font-size: 25px;
+    font-weight: 500px;
+    color: #156942;
+    text-align: center;
+    padding:25px;
+    padding-bottom: 0px;
+}
+.bold{
+    font-weight: bold;
+}
+.result-button{
+    margin:auto;
+    width:40%;
+    padding:20px;
+    margin-top:30px;
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz with timer</title>
+    <link href="css/sty.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e690170c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <body>
+        <header>
+            <div class="topic">Test your Knowledge</div>
+        </header>
+        <div class="box">
+       <!-- Info box -->
+            <div class="info-box">
+                <div class="info-title">
+                    <span>Rules for the quiz</span>
+                </div>
+                <div class="info-list">
+                    <ul>
+                        <li class="info">You will have <span>15 sec </span>for each question.</li>
+                        <li class="info">You cannot reselect your answer.</li>
+                        <li class="info">You cannot quit the quiz while playing.</li>
+                        <li class="info">You will get <span>1 points</span> for each correct answer.</li>
+                    </ul >
+                </div>
+                <div class="info-footer">Best of Luck!!</div>
+            </div>
+            <!-- Start and exit button -->
+            <div class="button">
+                <button class="start">Start</button>
+                <button class="exit">Exit</button>
+            </div> 
+        </div>
+    
+    
+        <!-- Quiz box -->
+        <div class="quiz-box">
+            <section class="ques-ans">
+                <div class="ques-box">
+                    <div class="question"></div>
+                    <div class="timer"><span class="text">Time Left: </span><p class="seconds">15</p></div>
+                </div>
+                <div class="ans-box"></div>
+            </section>
+            <div class="quiz-footer">
+                <div class="count"></div>
+                <div class="next-button"><Button>Next</Button> </div>
+            </div>
+        </div>
+    
+    
+        <!-- Result box -->
+        <div class="result-box">
+            <div class="score-box">
+                <div class="icon"><i class="fa fa-check"></i></div>
+                <p>You've successfully completed the quiz.</p>
+                <p>Your score is : <span class="score bold"></span> out of <span class="bold">10</span></p>
+                <p><span class="bold comment"></span></p>
+            </div>
+            <div class="result-button">
+                <Button class="restart">Restart</Button>
+                <Button class="exit">Exit</Button>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/question.js"></script>
+    </body>
+    </html>
